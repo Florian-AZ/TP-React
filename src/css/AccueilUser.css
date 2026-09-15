@@ -1,0 +1,46 @@
+.utilisateur {
+    min-height: calc(100vh - 69px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte-utilisateur {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: #1a1d26;
+    border: 1px solid #262a35;
+    border-radius: 16px;
+}
+
+.utilisateur-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #2a2f3d;
+}
+
+.utilisateur-nom {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.utilisateur-retour {
+    padding: 8px 16px;
+    border: 1px solid #2a2f3d;
+    border-radius: 8px;
+    background: #11131a;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.utilisateur-introuvable {
+    margin-top: 48px;
+    color: #9ca3af;
+    text-align: center;
+}

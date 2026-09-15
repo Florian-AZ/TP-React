@@ -1,0 +1,13 @@
+.annuaire {
+    max-width: 500px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+.annuaire .carte-recette {
+    justify-content: center;
+}
+
+.annuaire .carte-recette div {
+    flex: none;
+}

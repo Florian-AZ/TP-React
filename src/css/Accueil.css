@@ -1,0 +1,73 @@
+.accueil {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.accueil-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accueil-titre {
+  margin: 0 0 8px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carte {
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #1a1d26;
+  border: 1px solid #262a35;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.carte-recette {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.carte-recette div {
+  flex: 1;
+  text-align: center;
+}
+
+.carte-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.carte-nom {
+  margin: 0 0 4px;
+  color: white;
+  font-weight: 600;
+}
+
+.carte-info {
+  margin: 0 0 8px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.carte-lien {
+  color: #818cf8;
+  font-size: 14px;
+  text-decoration: none;
+}

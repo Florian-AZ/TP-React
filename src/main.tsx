@@ -1,12 +1,12 @@
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import "./index.css";
 import { Outlet } from "react-router";
 import Header from "./components/Header.tsx";
-import App from './App.tsx';
-import UserList from './pages/UserList.tsx';
-import User from './pages/User.tsx';
+import Accueil from './pages/Accueil.tsx';
+import Annuaire from './pages/Annuaire.tsx';
+import AccueilUser from './pages/AccueilUser.tsx';
+import "./index.css";
 
 const Layout =() => (
     <>
@@ -15,23 +15,21 @@ const Layout =() => (
     </>
 )
 
-
-
 const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
     {
       path: '/',
-      element: <App />
+      element: <Accueil />
     },
     {
-      path: '/userlist',
-      element: <UserList />
+      path: '/Annuaire',
+      element: <Annuaire />
     },
     {
-      path: '/user/:username',
-      element: <User />
+      path: '/user/:id',
+      element: <AccueilUser />
     },
     ]
   }
