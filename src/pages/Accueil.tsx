@@ -7,16 +7,7 @@ import "../css/Accueil.css"
 function Accueil() {
     return (
         <div className="accueil">
-            <section className="accueil-column">
-                <h2 className="accueil-titre">Users</h2>
-                {profil.users.map((user) =>
-                    <div className="carte">
-                        <p className="carte-nom">{user.firstName} {user.lastName}</p>
-                        <Link to={`/user/${user.id}`} className="carte-lien">Voir le profil →</Link>
-                    </div>
-                )}
-            </section>
-
+            <h1 className="carte-nom-Accueil">Florian Azria</h1>
             <section className="accueil-column">
                 <h2 className="accueil-titre">Recettes</h2>
                 {recipe.recipes.map((r) =>
