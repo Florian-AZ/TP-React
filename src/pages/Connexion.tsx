@@ -7,10 +7,10 @@ function Connexion() {
 
     function seConnecter() {
         const username = (document.getElementById('username') as HTMLInputElement).value
-        const user = data.users.find((u) => u.username === username)
+        const password = (document.getElementById('password') as HTMLInputElement).value
+        const user = data.users.find((u) => u.username === username && u.password === password)
         if (user) {
-            localStorage.setItem('userConnecte', JSON.stringify(user))
-            navigate(`/profil/`),{/*${user.id}*/}
+            navigate(`/profil/${user.id}`)
         } else {
             alert("Identifiants incorrects")
         }
@@ -20,6 +20,7 @@ function Connexion() {
         <div>
             <h1>Connexion</h1>
             <input id="username" type="text" placeholder="Username" />
+            <input id="password" type="password" placeholder="Mot de passe" />
             <button onClick={seConnecter}>Se connecter</button>
         </div>
     )

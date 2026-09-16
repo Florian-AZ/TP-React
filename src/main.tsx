@@ -10,6 +10,7 @@ import AccueilRecipe from './pages/AccueilRecipe.tsx';
 import ListeRecettes from './pages/ListeRecettes.tsx';
 import Connexion from './pages/Connexion.tsx';
 import Profil from './pages/Profil.tsx';
+import ErreurIntrouvable from './pages/ErreurIntrouvable.tsx'
 import "./index.css";
 
 const Layout = () => (
@@ -47,13 +48,13 @@ const router = createBrowserRouter([
         path: '/connexion',
         element: <Connexion />
       },
-      {/*{
+      {
         path: '/profil/:id',
         element: <Profil />
-      },*/},
+      },
       {
-        path: '/profil',
-        element: <Profil />
+        path: '*',
+        element: <ErreurIntrouvable />
       }
     ]
   }
