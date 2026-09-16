@@ -9,7 +9,8 @@ function Connexion() {
         const username = (document.getElementById('username') as HTMLInputElement).value
         const user = data.users.find((u) => u.username === username)
         if (user) {
-            navigate(`/profil/${user.id}`)
+            localStorage.setItem('userConnecte', JSON.stringify(user))
+            navigate(`/profil/`),{/*${user.id}*/}
         } else {
             alert("Identifiants incorrects")
         }
