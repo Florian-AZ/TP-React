@@ -8,6 +8,8 @@ import Annuaire from './pages/Annuaire.tsx';
 import AccueilUser from './pages/AccueilUser.tsx';
 import AccueilRecipe from './pages/AccueilRecipe.tsx';
 import ListeRecettes from './pages/ListeRecettes.tsx';
+import Connexion from './pages/Connexion.tsx';
+import Profil from './pages/Profil.tsx';
 import "./index.css";
 
 const Layout = () => (
@@ -39,7 +41,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/recette',
-        element: <ListeRecettes/>
+        element: <ListeRecettes />
+      },
+      {
+        path: '/connexion',
+        element: <Connexion />
+      },
+      {
+        path: '/profil',
+        element: <Profil />
       }
     ]
   }
