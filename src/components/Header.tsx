@@ -9,7 +9,7 @@ function Header() {
           <ul className="navbar-links">
             <li><Link to="/">Accueil</Link></li>
             <li><Link to="/Annuaire">Annuaire</Link></li>
-            <li><Link to="/recipe">Recettes</Link></li>
+            <li><Link to="/recette">Recettes</Link></li>
           </ul>
         </nav>
       </div>

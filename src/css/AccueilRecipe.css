@@ -1,0 +1,27 @@
+.recette-nom {
+  margin: 16px 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.recette-image {
+    margin: 16px 0 20px;
+}
+
+.liste-recettes-carte {
+  height: 120px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: #1a1d26;
+  border: 1px solid #262a35;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.liste-recettes-texte {
+  width: 250px;
+  text-align: center;
+}

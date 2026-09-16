@@ -1,0 +1,48 @@
+.liste-recettes {
+    max-width: 500px;
+    margin: 32px auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.liste-recettes-titre {
+    margin: 0 0 8px;
+    color: white;
+    text-align: center;
+}
+
+.liste-recettes-carte {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: #1a1d26;
+    border: 1px solid #262a35;
+    border-radius: 12px;
+}
+
+.liste-recettes-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.liste-recettes-texte {
+    text-align: center;
+}
+
+.liste-recettes-nom {
+    margin: 0 0 4px;
+    color: white;
+    font-weight: 600;
+}
+
+.liste-recettes-lien {
+    color: #818cf8;
+    font-size: 14px;
+    text-decoration: none;
+}
